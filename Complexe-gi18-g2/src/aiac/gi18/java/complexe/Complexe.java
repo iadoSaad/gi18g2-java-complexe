@@ -45,6 +45,14 @@ public class Complexe {
 		return ret;
 	}
 	
+	public static Complexe add(Complexe c1,Complexe c2) {
+			return c1.add(c2);
+	}
+	
+	public static int createdComplexe() {
+		
+	}
+	
 	public String toString()
 	{
 		return this.reel+ " + "+this.img;
