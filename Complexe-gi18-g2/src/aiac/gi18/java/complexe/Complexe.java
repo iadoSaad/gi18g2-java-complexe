@@ -4,6 +4,13 @@ public class Complexe {
 
 	private double reel;
 	private double img;
+	
+	private static int compteur=0;
+	
+	{
+		compteur++;
+	}
+
 
 	public Complexe() {
 		this(0, 0);
