@@ -57,7 +57,7 @@ public class Complexe {
 	}
 	
 	public static int createdComplexe() {
-		
+		return compteur;
 	}
 	
 	public String toString()

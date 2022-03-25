@@ -10,7 +10,11 @@ public class Main {
 		
 		System.out.println(c1);
 		System.out.println(c2);
-
+		
+		Complexe c4=c1.multiply(5).add(c2.mul(c3).add(c1).mul(c3)) ;
+		
+		System.out.println(c4);
+		System.out.println(Complexe.createdComplexe());
 	}
 
 }
