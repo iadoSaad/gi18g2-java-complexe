@@ -49,7 +49,7 @@ public class Complexe {
 		Complexe ret = new Complexe();
 		ret.reel = this.reel * c.reel - this.img * c.img;
 		ret.img = this.reel * c.img + this.img * c.reel;
-		return ret;
+		return ret; 
 	}
 	
 	public static Complexe add(Complexe c1,Complexe c2) {
@@ -60,8 +60,10 @@ public class Complexe {
 		return compteur;
 	}
 	
+	
 	public String toString()
 	{
 		return this.reel+ " + "+this.img;
 	}
+	
 }

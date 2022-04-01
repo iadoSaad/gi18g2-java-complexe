@@ -1,5 +1,9 @@
 package aiac.gi18.java.complexe;
 
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.List;
+
 public class Main {
 
 	public static void main(String[] args) {
@@ -15,6 +19,11 @@ public class Main {
 		
 		System.out.println(c4);
 		System.out.println(Complexe.createdComplexe());
+		
+		Collection<Complexe> list=new ListComplexe();
+		list.add(c1);
+		list.add(c2); list.add(c1);
+		System.out.println(list);
 	}
 
 }
