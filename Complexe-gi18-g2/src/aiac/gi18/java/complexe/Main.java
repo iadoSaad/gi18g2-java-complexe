@@ -1,6 +1,5 @@
 package aiac.gi18.java.complexe;
 
-import java.util.Collection;
 import java.util.Collections;
 
 public class Main {
@@ -21,6 +20,9 @@ public class Main {
 		
 		System.out.println(myList);
 		
+		Collections.sort(myList, new ComparatorImg());
+		
+		System.out.println(myList);
 		
 	}
 

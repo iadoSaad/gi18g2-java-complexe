@@ -10,6 +10,14 @@ public class Complexe implements Comparable<Complexe> {
 	{
 		compteur++;
 	}
+	
+	public double getImg() {
+		return img;
+	}
+	
+	public double getReel() {
+		return reel;
+	}
 
 
 	public Complexe() {
@@ -64,7 +72,7 @@ public class Complexe implements Comparable<Complexe> {
 	
 	public String toString()
 	{
-		return this.reel+ " + "+this.img;
+		return this.reel+ " + i"+this.img;
 	}
 	
 	@Override
