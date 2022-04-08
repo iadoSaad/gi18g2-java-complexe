@@ -1,6 +1,6 @@
 package aiac.gi18.java.complexe;
 
-public class Complexe  {
+public class Complexe implements Comparable<Complexe> {
 
 	private double reel;
 	private double img;
@@ -73,6 +73,14 @@ public class Complexe  {
 			return false;
 		}
 	return	((Complexe)obj).img==this.img && ((Complexe)obj).reel==this.reel;
+	}
+
+	@Override
+	public int compareTo(Complexe o) {
+		
+		if(this.reel==o.reel) return 0;
+		if(this.reel>o.reel) return 1;
+		return -1;
 	}
 	
 }
