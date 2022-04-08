@@ -43,6 +43,9 @@ public class Main {
 		
 		Collections.sort(myList, (o1, o2) -> -new ComparatorImg().compare(o1, o2));
 		System.out.println(myList);
+		
+		myList.forEach(complexe -> System.out.println("* "+complexe));
+		
 	}
 
 	public static void main(String[] args) {
