@@ -1,6 +1,7 @@
 package aiac.gi18.java.complexe;
 
 import java.util.Collections;
+import java.util.Comparator;
 
 public class Main {
 	
@@ -24,6 +25,24 @@ public class Main {
 		
 		System.out.println(myList);
 		
+		Comparator<Complexe> comp;
+		comp=new Comparator<Complexe>() {
+
+			@Override
+			public int compare(Complexe o1, Complexe o2) {
+				
+				return -o1.compareTo(o2);
+			}
+			
+		};
+		Collections.sort(myList, comp);
+		System.out.println(myList);
+		
+		comp=(o1, o2) -> -o1.compareTo(o2) ;
+		Collections.sort(myList,comp);
+		
+		Collections.sort(myList, (o1, o2) -> -new ComparatorImg().compare(o1, o2));
+		System.out.println(myList);
 	}
 
 	public static void main(String[] args) {
