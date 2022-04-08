@@ -1,32 +1,31 @@
 package aiac.gi18.java.complexe;
 
-import java.util.ArrayList;
 import java.util.Collection;
-import java.util.List;
+import java.util.Collections;
 
 public class Main {
-
-	public static void main(String[] args) {
+	
+	public static void testListComplexe() {
 		Complexe c1,c2,c3;
 		c1=new Complexe(1, 2);
-		c2=new Complexe(1,2);
-		c3=new Complexe(-1, 4);
+		c2=new Complexe(10,1);
+		c3=new Complexe(3, 4);
 		
-		System.out.println(c1.equals(c2));
+		ListComplexe myList=new ListComplexe();
 		
-		System.out.println(c1);
-		System.out.println(c2);
+		myList.add(c1);myList.add(c2);myList.add(c3);
 		
-		Complexe c4=c1.multiply(5).add(c2.mul(c3).add(c1).mul(c3)) ;
+		System.out.println(myList);
 		
-		System.out.println(c4);
-		System.out.println(Complexe.createdComplexe());
+		Collections.sort(myList);
 		
-		Collection<Complexe> list=new ListComplexe();
-		list.add(c1);
-		list.add(c2); list.add(c1);
-		list.add(c3);
-		System.out.println(list);
+		System.out.println(myList);
+		
+		
+	}
+
+	public static void main(String[] args) {
+		testListComplexe();
 	}
 
 }
