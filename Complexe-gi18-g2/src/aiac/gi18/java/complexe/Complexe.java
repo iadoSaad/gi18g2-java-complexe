@@ -1,6 +1,6 @@
 package aiac.gi18.java.complexe;
 
-public class Complexe {
+public class Complexe  {
 
 	private double reel;
 	private double img;
@@ -50,8 +50,9 @@ public class Complexe {
 		ret.reel = this.reel * c.reel - this.img * c.img;
 		ret.img = this.reel * c.img + this.img * c.reel;
 		return ret; 
+		
 	}
-	
+
 	public static Complexe add(Complexe c1,Complexe c2) {
 			return c1.add(c2);
 	}
@@ -64,6 +65,14 @@ public class Complexe {
 	public String toString()
 	{
 		return this.reel+ " + "+this.img;
+	}
+	
+	@Override
+	public boolean equals(Object obj) {
+		if (! (obj instanceof Complexe) ){
+			return false;
+		}
+	return	((Complexe)obj).img==this.img && ((Complexe)obj).reel==this.reel;
 	}
 	
 }

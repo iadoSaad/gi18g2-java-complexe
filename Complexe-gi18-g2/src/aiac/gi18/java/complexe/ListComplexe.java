@@ -10,6 +10,8 @@ public class ListComplexe extends ArrayList<Complexe> {
 		return super.add(e);
 	}
 	
+	
+	
 	public  Complexe somme() {
 		Complexe c=new Complexe();
 		
